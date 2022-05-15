@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz sobre Setúbal</title>
+    <style>
+        @import "estilos.css";
+        *{font-family: sans-serif;}
+        h1{color: red;}
+        .imp{font-weight: bold;}
+        #unic{background-color: aqua;}
+        a {
+            color: yellowgreen;
+            font-family: cursive;
+        }
+        [target=_blank]{
+            background-color: dimgrey;
+        }
+        a:hover{background-color:yellow}
+        h2::first-letter{font-size: 2em;}
+        #unico{background-color: whitesmoke}
+    </style>
+
+</head>
+
+
+
+
+    <h1 class="imp"  id="unic" align="center">Quizz sobre Setúbal</h1>
+    <br>
+    <h2 >Nesta página será feito um quizz sobre o conteúdo visto nas páginas anteriores</h2>
+    <br>
+    <form method="post" action="mailto:a22004525@alunos.ulht.pt">
+        <center>
+            <fieldset style = "width:600px">
+                <fieldset style = "width:50px">
+                    <input type="text" name="nome" placeholder="Nome">
+                    <input type="text" name="apelido" placeholder="Apelido">
+                    <input type="email" name="email" placeholder="axxxxxx@alunos.ulht.pt">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>1º-> Área da cidade</h3></legend>
+
+                    <input type="radio" id="area"
+                    name="area_de_setubal" value="Area">
+                    <label for="area">230,33 km²</label><br>
+
+                    <input type="radio" id="area2"
+                    name="area_de_setubal" value="Area2">
+                    <label for="area">250,66 km²</label><br>
+
+                    <input type="radio" id="area3"
+                    name="area_de_setubal" value="Area3">
+                    <label for="area">180,22 km²</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>2º-> Descreva Setúbal</h3></legend>
+
+                    <input type="text" id="texto" name="texto_sobre_setubal"
+                           placeholder="escreva aqui, max 400c" autocomplete="false"
+                    maxlength="400" style="width:500px; height:100px;">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>3º-> cor Da praia</h3></legend>
+
+                    <input type="color" id="corDoMar"
+                           name="Cor do mar" value="#FFFFFF">
+                    <!-- #00FFFF -->
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>4-> Nr de habitantes</h3></legend>
+                    <input type="number" id="habitantes" max="9999999999" min="0">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>5-> Escolha um intervalo de km's entre Lisboa e Setúbal  <br> 0km->100km</h3></legend>
+                    <input type="range" id="intervalor" name = "int" min="0" max="100">
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>6-> Escolha o que gosta mais de Setúbal</h3></legend>
+
+                        <input type="checkbox" id="praia" name="praia" value="praia">
+                        <label for="praia"> gosto de praias</label><br>
+                        <input type="checkbox" id="festas" name="festas" value="festa">
+                        <label for="festas"> gosto de festas</label><br>
+                        <input type="checkbox" id="as 2 a cima" name="as 2 a cima" value="as 2 a cima">
+                        <label for="as 2 a cima"> as 2 a cima</label><br>
+                        <input type="checkbox" id="nenhuma" name="nenhuma" value="nenhuma">
+                        <label for="nenhuma"> nenhuma</label><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>7-> Dia de feriado de setúbal</h3></legend>
+                    <input type="date" id="dia de feriado de setúbal" value="dia de feriado de setúbal">
+                    <!-- 15 de setembro -->
+                </fieldset>
+
+                <fieldset>
+
+                    Insira a sua opinião:<br>
+                    <textarea name="mensagem" rows="5" cols="40">
+                    Pode-se inserir algum texto na caixa.
+                    </textarea>
+                </fieldset>
+
+                <br><br>
+                <input id="unico" type="image" src="images/botaoDeSubmeter.png" alt="Submit" width="40" height="40">
+
+
+            </fieldset>
+        </center>
+    </form>
+
+    <br>
+
+
+    <center>
+        <table cellspacing="1" cellpadding="5" align="center" border="3">
+                <tr>
+                    <th rowspan="2">Informações</th>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr>
+                    <td><a href="../" target="_blank">Indice</a></td>
+                </tr>
+                <tr>
+                    <td><a href="index.html" target="_blank">Introdução</a></td>
+                </tr>
+                <tr>
+                    <td><a href="info.html" target="_blank">Informação</a></td>
+                </tr>
+                <tr>
+                    <td><a href="local.html" target="_blank">Localização</a></td>
+                </tr>
+                <tr>
+                    <td><a href="multimedia.html" target="_blank">Multimedia</a></td>
+                </tr>
+                <tr>
+                    <td><a href="quizz.html" target="_blank">Quizz</a></td>
+                </tr>
+                <tr>
+                    <td><a href="html5-css.html" target="_blank">Sintaxe-Usada</a></td>
+                </tr>
+            </table>
+    </center>
+
+
+</body>
+</html>

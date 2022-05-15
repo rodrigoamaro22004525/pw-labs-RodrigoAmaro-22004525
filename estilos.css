@@ -1,0 +1,33 @@
+*{ /*todas as letras*/
+    font-family: sans-serif;
+}
+
+h1{
+    color: #3a66f8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-style: oblique;
+}
+
+table{
+    margin: 2px;
+    border: 5px solid black;
+}
+
+li{
+    margin:10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+li:nth-child(n) {
+    background: white;
+    width: 500px;
+}

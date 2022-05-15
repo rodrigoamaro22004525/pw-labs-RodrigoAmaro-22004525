@@ -1,0 +1,41 @@
+*{ /*todas as letras*/
+    font-family: sans-serif;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 614px;
+  font-size: 18px;
+}
+
+.topleft2 {
+  position: absolute;
+  top: 0;
+  left: 854px;
+  font-size: 18px;
+}
+
+td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table{
+    margin: 2px;
+    border: 5px solid black;
+}
+
+
+tr:nth-child(2n) {
+    background: white;
+}

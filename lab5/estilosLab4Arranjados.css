@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box
+}
+
+
+/*
+2ª parte
+ */
+.menu {
+    display: flex;
+    background-image: url("images/backgroundDoMenu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.menu > a {
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover {
+    background: gray;
+    font-weight: bold;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    background-repeat: no-repeat;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-image: url("images/lp-hero-gb-v2.jpg");
+    background-size: 99%;
+    padding: 200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+2ª parte
+ */
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*
+1ª parte
+ */
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background: lightblue;
+    padding: 50px;
+    bottom: 64px;
+
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background: azure;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+/*
+1ª parte
+ */
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/*
+3ª parte
+ */
+
+.dicasPaViajantes {
+    display: grid;
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-size: 100%;
+    padding: 64px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    align-items: center;
+
+}
+
+
+.dicasPaViajantes > div {
+    margin: auto;
+
+}
+
+.dicasPaViajantes h4 {
+    margin: 10px;
+}
+
+.dicasPaViajantes h2 {
+    margin-left: 5px;
+
+}
+
+.topoEsq {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.tituloPaViajantes {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+
+}
+
+.tituloDaImagemGrande {
+    position: center;
+    vertical-align: center;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+div > div h4 {
+    white-space: pre;
+}
+
+.styleDasCaixas {
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.styleDasCaixas2 {
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.caixa {
+    margin: 10px;
+    width: 350px;
+    height: 210px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    word-break: keep-all;
+    background: azure;
+}
+
+.top-left {
+    position: relative;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.top-left2 {
+    position: relative;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    background: lightblue;
+}
+
+.bottom-left {
+    position: relative;
+    color: white;
+    font-size: xx-large;
+    bottom: 70px;
+    left: 20px;
+}
+
+.bottom-left2 {
+    position: absolute;
+    color: black;
+    font-size: large;
+    bottom: 10px;
+    left: 20px;
+}
+
+
+/*
+4ª parte
+ */
+
+.grid-container {
+    overflow-y: hidden;
+    font-family: Arial, serif;
+    width: auto;
+    margin: 0;
+    display: grid;
+    height: 610px;
+    background-color: lightblue;
+    grid-template-columns: 24% 24% 24% 26%;
+    grid-template-rows: 50%  50%;
+    grid-template-areas:"porto cascais lagos lisboa"
+                        "acores acores sintra ultimasOpcoes";
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.porto {
+    background-image: url("images/porto.jpg");
+    grid-area: porto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+}
+
+.cascais {
+    background-image: url("images/cascais.jpg");
+    background-size: auto;
+    grid-area: cascais;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.lagos {
+    background-image: url("images/lagos.jpg");
+    background-size: auto;
+    grid-area: lagos;
+    width: auto;
+    background-repeat: no-repeat;
+
+}
+
+.acores {
+    background-image: url("images/acores.jpg");
+    background-size: auto;
+    grid-area: acores;
+    width: auto;
+    background-repeat: no-repeat;
+
+}
+
+.lisboa {
+    background-image: url("images/lisboa.jpg");
+    background-size: auto;
+    grid-area: lisboa;
+    background-repeat: no-repeat;
+}
+
+.sintra {
+    background-image: url("images/sintra.jpg");
+    background-size: auto;
+    grid-area: sintra;
+    background-repeat: no-repeat;
+}
+
+.ultimasOpcoes {
+    background-image: url("images/acampamentoCIGAS.jpg");
+    background-size: auto;
+    grid-area: ultimasOpcoes;
+    background-repeat: no-repeat;
+}
+
+.text {
+        position: relative;
+}
+
+.button {
+        position: absolute;
+        background-color: wheat;
+        color: black;
+        display: flex;
+        font-size: 16px;
+        margin: 10px;
+        bottom: 20px;
+        cursor: pointer;
+        box-shadow: 2px 3px 3px Black;
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        background-color: PaleGreen;
+        font-weight: bold;
+    }
+
+/*
+@media (max-width: 900px) {
+
+    .grid-container {
+        background-color: lightblue;
+        background-size: 100%;
+        border-image-width: 2px;
+        display: grid;
+        padding: 10px;
+        gap: 5px;
+        justify-content: space-between;
+        grid-template-areas:
+            'porto cascais lagos acores'
+            'ultimasOpcoes lisboa sintra G';
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .top-left {
+        position: relative;
+        color: Black;
+        margin: 20px;
+        font-size: xx-large;
+        left: 10px;
+    }
+
+    .bottom-left {
+        position: absolute;
+        color: Black;
+        font-size: xx-large;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .bottom-left2 {
+        position: absolute;
+        color: black;
+        font-size: large;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .text {
+        position: relative;
+    }
+
+    .texto_grande {
+        position: relative;
+        color: black;
+        bottom: 0;
+        left: 50px;
+        display: flex;
+        font-size: 3vmin;
+    }
+
+    .div_texto-paragrafo {
+        position: relative;
+        bottom: -1px;
+        left: 50px;
+        display: flex;
+        font-size: 2.5vmin;
+    }
+
+    .button {
+        position: absolute;
+        background-color: Black;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        right: 10px;
+        bottom: 10px;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 2px 3px 3px Black;
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        background-color: PaleGreen;
+        font-weight: bold;
+    }
+}
+
+ */
+/*
+@media (min-width: 901px) {
+
+    .grid-container {
+        font-family: Tahoma, Arial, sans-serif;
+        background-size: 100%;
+        border-image-width: 2px;
+        background-color: lightblue;
+        display: grid;
+        padding: 10px;
+        gap: 5px;
+        justify-content: space-between;
+        grid-template-areas:
+            'porto cascais lagos acores'
+            'ultimasOpcoes lisboa sintra G';
+    }
+
+    img {
+        width: 100%;
+        height: 100%
+    }
+
+
+    .container {
+        position: relative;
+        color: white;
+    }
+
+    .top-left {
+        position: relative;
+        color: Black;
+        font-size: xx-large;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        color: white;
+        font-size: xx-large;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .bottom-left2 {
+        position: absolute;
+        font-weight: bolder;
+        color: white;
+        font-size: large;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .text {
+        position: relative;
+    }
+
+    .texto_grande {
+        position: relative;
+        color: black;
+        bottom: 0;
+        left: 50px;
+        display: flex;
+        font-size: 3vmin;
+    }
+
+    .div_texto-paragrafo {
+        position: relative;
+        bottom: -1px;
+        left: 50px;
+        display: flex;
+        font-size: 2.5vmin;
+    }
+
+    .button {
+        position: absolute;
+        background-color: wheat;
+        color: black;
+        padding: 15px 32px;
+        right: 250px;
+        bottom: -50px;
+        display: flex;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 2px 3px 3px Black;
+        border-radius: 10px;
+    }
+
+    .button:hover {
+        background-color: PaleGreen;
+        font-weight: bold;
+    }
+
+}
+
+ */
